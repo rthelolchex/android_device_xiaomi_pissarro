@@ -5,8 +5,5 @@ on property:sys.boot_completed=1
     # force disable hw overlays to be true
     exec - root -- /system/bin/sh -c "service call SurfaceFlinger 1008 i32 1" 
 
-on property:persist.sys.MT6877.dt2w=0
-    exec /system/bin/sendevent /dev/input/event5 0 1 4
-
-on property:persist.sys.MT6877.dt2w=1
-    exec /system/bin/sendevent /dev/input/event5 0 1 5
+on property:persist.sys.MT6877.dt2w=*
+    exec /system/bin/xiaomi-touch 14 ${persist.sys.MT6877.dt2w}

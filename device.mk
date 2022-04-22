@@ -144,7 +144,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.mt6877
+    android.hardware.lights-service.xiaomi_mt6877
 
 # Permissions
 PRODUCT_COPY_FILES += \

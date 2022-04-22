@@ -34,6 +34,11 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf /vendor/lib64/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mt6877.so
 	$(hide) touch $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(VENDOR_SYMLINKS)
+LIGHT_REPLACEMENT += $(TARGET_OUT_PRODUCT)/vendor_overlay/${PRODUCT_TARGET_VNDK_VERSION}/bin/hw/android.hardware.lights-service.mediatek
+$(LIGHT_REPLACEMENT): $(LOCAL_INSTALLED_MODULE)
+	@mkdir -p $(dir $@)
+	$(hide) ln -s /system/bin/hw/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(VENDOR_SYMLINKS) $(LIGHT_REPLACEMENT)
 endif
 

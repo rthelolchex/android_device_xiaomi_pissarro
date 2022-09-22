@@ -24,6 +24,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Properties
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure.recovery=0
+
 # A/B
 ENABLE_VIRTUAL_AB := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)

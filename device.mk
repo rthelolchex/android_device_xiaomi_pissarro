@@ -60,6 +60,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Override props for debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1 \
+    ro.control_privapp_permissions=log
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \

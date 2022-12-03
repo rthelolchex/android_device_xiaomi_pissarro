@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 Device Tree for Xiaomi 11i (pissarro)
 ==========================================
 

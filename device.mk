@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Inherit the vendor files
+$(call inherit-product, vendor/xiaomi/pissarro/pissarro-vendor.mk)
+
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Properties

@@ -1,0 +1,5 @@
+# OMX
+lib/libstagefright_omx.so:product/vendor_overlay/30/lib/libstagefright_omx.so
+lib/libstagefright_omx_utils.so:product/vendor_overlay/30/lib/libstagefright_omx_utils.so
+lib64/libstagefright_omx.so:product/vendor_overlay/30/lib64/libstagefright_omx.so
+lib64/libstagefright_omx_utils.so:product/vendor_overlay/30/lib64/libstagefright_omx_utils.so

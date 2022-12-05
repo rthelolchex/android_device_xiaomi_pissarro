@@ -123,6 +123,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.pissarro
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.mt6877.rc \
+    fstab.mt6877 \
+    fstab.mt6877_ramdisk
+
 # Screen density
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi

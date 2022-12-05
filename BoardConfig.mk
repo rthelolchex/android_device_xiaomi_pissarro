@@ -165,3 +165,6 @@ VENDOR_SECURITY_PATCH := 2021-11-05
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
+
+# Firmware
+include vendor/xiaomi/pissarro-firmware/BoardConfigVendor.mk

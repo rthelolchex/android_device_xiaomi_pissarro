@@ -71,6 +71,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1 \
     ro.control_privapp_permissions=log
 
+# Always use GPU for screen compositing
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.disable_hwc_overlays=1
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \

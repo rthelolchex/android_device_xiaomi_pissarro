@@ -525,7 +525,9 @@
         <item>7,1</item>
         <item>9,1</item>
     </string-array>
-    
+
+    <!-- Flag specifying whether or not IMS will use the ImsResolver dynamically -->
+    <bool name="config_dynamic_bind_ims">true</bool>
 <!-- UI -->
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
@@ -577,7 +579,7 @@
     
     <!-- Control whether the always on display mode is enabled by default. This value will be used
          during initialization when the setting is still null. -->
-    <bool name="config_dozeAlwaysOnEnabled">false</bool>    
+    <bool name="config_dozeAlwaysOnEnabled">true</bool>    
     
     <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>

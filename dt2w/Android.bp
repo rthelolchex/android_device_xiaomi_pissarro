@@ -10,4 +10,15 @@ android_app {
         enabled: false,
     },
     privileged: true
+
+    required: [
+        "privapp-permissions_co.potatoproject.dt2w.MT6877"
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions_co.potatoproject.dt2w.MT6877",
+    sub_dir: "permissions",
+    src: "privapp-permissions_co.potatoproject.dt2w.MT6877.xml",
+    filename_from_src: true,
 }

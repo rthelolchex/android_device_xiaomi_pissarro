@@ -34,7 +34,7 @@ android_app {
     },
 
     required: [
-        "privapp-permissions_co.potatoproject.dt2w.MT6877"
+        "privapp-permissions_co.potatoproject.dt2w.MT6877",
         "xiaomi-touch"
     ]
 }
